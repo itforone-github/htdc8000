@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:scrollbarSize="0dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/centerLayout"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/logo" />
+
+    <LinearLayout
+        android:id="@+id/centerLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        ></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menuLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/centerLayout"
+
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/menu1Img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:src="@drawable/menu_1" />
+
+        <ImageView
+            android:id="@+id/menu2Img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:src="@drawable/menu_2" />
+
+        <ImageView
+            android:id="@+id/menu3Img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:src="@drawable/menu_3" />
+
+        <ImageView
+            android:id="@+id/menu4Img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:src="@drawable/menu_4" />
+    </LinearLayout>
+
+</RelativeLayout>
